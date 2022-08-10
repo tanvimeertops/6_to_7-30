@@ -16,7 +16,7 @@ types inheritance
 #include "People.h"
 using namespace std;
 class Student:public people{
-private:
+protected:
 int fees;
 public:
 void set_fees();

@@ -6,7 +6,8 @@ int id;
 char name[100];
 public:
 void set_data(){
-    cout<<"Enter name:"<<endl;
+    cout
+    <<"Enter name:"<<endl;
     cin>>name;
     cout<<"enter id:"<<endl;
     cin>>id;
