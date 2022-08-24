@@ -2,7 +2,7 @@
 1.runtime polymorphism
 2.compile time polymorphism
 types compile time polymorphism:
-overloading same name but different parameter
+->>>overloading same name but different parameter
 1.constructor overloading 
 2.function overloading
 3.operator overloading
@@ -11,18 +11,24 @@ wap in c++ sum of two no using constructor overloading.
 #include<iostream>
 using namespace std;
 class A{
-    int a=10,b=20;
+    
     public:
     void sum(){
+        int a=10,b=20;
         cout<<"sum:"<<a+b;
     }
+    
+};
+class B:public A{
+    public:
     void sum(int a,int b){
         cout<<"sub:"<<a-b;
     }
 };
 int main(){
-    A a;
-    a.sum();
+    B a;
+    A *ptr;
+    ptr->sum();
     a.sum(20,5);
 
 }
